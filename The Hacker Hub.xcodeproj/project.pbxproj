@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D287BB3259E522B00FAE1D9 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D287BB2259E522B00FAE1D9 /* WebView.swift */; };
 		6D6612AB259E3FAA00A72D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6612AA259E3FAA00A72D20 /* AppDelegate.swift */; };
 		6D6612AD259E3FAA00A72D20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6612AC259E3FAA00A72D20 /* SceneDelegate.swift */; };
 		6D6612AF259E3FAA00A72D20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6612AE259E3FAA00A72D20 /* ContentView.swift */; };
 		6D6612B1259E3FB100A72D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6612B0259E3FB100A72D20 /* Assets.xcassets */; };
 		6D6612B4259E3FB100A72D20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6612B3259E3FB100A72D20 /* Preview Assets.xcassets */; };
 		6D6612B7259E3FB100A72D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D6612B5259E3FB100A72D20 /* LaunchScreen.storyboard */; };
+		6D6612C1259E421E00A72D20 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6612C0259E421E00A72D20 /* NetworkManager.swift */; };
+		6D6612C4259E43B100A72D20 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6612C3259E43B100A72D20 /* PostData.swift */; };
+		6D6612C9259E489600A72D20 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6612C8259E489600A72D20 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D287BB2259E522B00FAE1D9 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		6D287BB5259F8E8F00FAE1D9 /* The Hacker Hub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "The Hacker Hub.entitlements"; sourceTree = "<group>"; };
 		6D6612A7259E3FAA00A72D20 /* The Hacker Hub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Hacker Hub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D6612AA259E3FAA00A72D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D6612AC259E3FAA00A72D20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,9 @@
 		6D6612B3259E3FB100A72D20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D6612B6259E3FB100A72D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D6612B8259E3FB100A72D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D6612C0259E421E00A72D20 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		6D6612C3259E43B100A72D20 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		6D6612C8259E489600A72D20 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +65,11 @@
 		6D6612A9259E3FAA00A72D20 /* The Hacker Hub */ = {
 			isa = PBXGroup;
 			children = (
+				6D287BB5259F8E8F00FAE1D9 /* The Hacker Hub.entitlements */,
 				6D6612AA259E3FAA00A72D20 /* AppDelegate.swift */,
 				6D6612AC259E3FAA00A72D20 /* SceneDelegate.swift */,
-				6D6612AE259E3FAA00A72D20 /* ContentView.swift */,
+				6D6612BF259E420F00A72D20 /* Models */,
+				6D6612C6259E488400A72D20 /* Views */,
 				6D6612B0259E3FB100A72D20 /* Assets.xcassets */,
 				6D6612B5259E3FB100A72D20 /* LaunchScreen.storyboard */,
 				6D6612B8259E3FB100A72D20 /* Info.plist */,
@@ -73,6 +84,25 @@
 				6D6612B3259E3FB100A72D20 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D6612BF259E420F00A72D20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D6612C0259E421E00A72D20 /* NetworkManager.swift */,
+				6D6612C3259E43B100A72D20 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D6612C6259E488400A72D20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D6612AE259E3FAA00A72D20 /* ContentView.swift */,
+				6D6612C8259E489600A72D20 /* DetailView.swift */,
+				6D287BB2259E522B00FAE1D9 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D6612C4259E43B100A72D20 /* PostData.swift in Sources */,
+				6D6612C9259E489600A72D20 /* DetailView.swift in Sources */,
+				6D6612C1259E421E00A72D20 /* NetworkManager.swift in Sources */,
 				6D6612AB259E3FAA00A72D20 /* AppDelegate.swift in Sources */,
 				6D6612AD259E3FAA00A72D20 /* SceneDelegate.swift in Sources */,
 				6D6612AF259E3FAA00A72D20 /* ContentView.swift in Sources */,
+				6D287BB3259E522B00FAE1D9 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +320,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "The Hacker Hub/The Hacker Hub.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"The Hacker Hub/Preview Content\"";
 				DEVELOPMENT_TEAM = L48SRYH7DF;
@@ -297,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.theAppCave.The-Hacker-Hub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,6 +343,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "The Hacker Hub/The Hacker Hub.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"The Hacker Hub/Preview Content\"";
 				DEVELOPMENT_TEAM = L48SRYH7DF;
@@ -318,6 +355,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.theAppCave.The-Hacker-Hub";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
